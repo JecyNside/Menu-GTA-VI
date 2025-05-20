@@ -1,15 +1,44 @@
 function Menu() {
   return (
-    <svg
-      className="icon"
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        position: "relative",
+        flexDirection: "column",
+        gap: ".5rem",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <rect x="18" y="22" width="33" height="8" fill="currentColor" />
-      <rect x="18" y="38" width="33" height="8" fill="currentColor" />
-    </svg>
+      {/* TOP */}
+      <div
+        className="menu-top"
+        style={{
+          top: "28px",
+          left: "12px",
+          width: "40px",
+          height: "8px",
+          background: "white",
+          /* transform: "rotate(45deg)",
+          transformOrigin: "center center", */
+        }}
+      />
+      {/* BOTTOM */}
+      <div
+        className="menu-bottom"
+        style={{
+          top: "28px",
+          left: "12px",
+          width: "40px",
+          height: "8px",
+          background: "white",
+          /* transform: "rotate(-45deg)",
+          transformOrigin: "center center", */
+        }}
+      />
+    </div>
   );
 }
 
