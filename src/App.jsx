@@ -105,7 +105,6 @@ function App() {
       duration: 0.25,
       ease: "power2.inOut",
       scale: 1,
-      transformOrigin: "center center",
     });
 
     gsap.to(".menu-top", {
@@ -114,7 +113,10 @@ function App() {
       duration: 0.25,
       ease: "power2.inOut",
       scale: 1,
-      transformOrigin: "center center",
+    });
+
+    gsap.to(".container-menu", {
+      background: "transparent",
     });
   });
 
@@ -157,6 +159,10 @@ function App() {
         ease: "power2.inOut",
         scale: 0.65,
         transformOrigin: "center center",
+      });
+
+      gsap.to(".container-menu", {
+        background: "hsla(0, 0%, 100%, .05)",
       });
     }
   }, [showModal]);

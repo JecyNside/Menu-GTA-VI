@@ -12,32 +12,8 @@ function Menu() {
         alignItems: "center",
       }}
     >
-      {/* TOP */}
-      <div
-        className="menu-top"
-        style={{
-          top: "28px",
-          left: "12px",
-          width: "40px",
-          height: "8px",
-          background: "white",
-          /* transform: "rotate(45deg)",
-          transformOrigin: "center center", */
-        }}
-      />
-      {/* BOTTOM */}
-      <div
-        className="menu-bottom"
-        style={{
-          top: "28px",
-          left: "12px",
-          width: "40px",
-          height: "8px",
-          background: "white",
-          /* transform: "rotate(-45deg)",
-          transformOrigin: "center center", */
-        }}
-      />
+      <div className="menu-top" />
+      <div className="menu-bottom" />
     </div>
   );
 }

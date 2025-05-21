@@ -68,6 +68,30 @@ nav {
   position: relative;
   width: 64px;
   height: 64px;
+  border-radius: 50%;
+}
+
+.menu-top {
+  top: 28px;
+  left: 12px;
+  width: 40px;
+  height: 8px;
+  background-color: white;
+  transition: background-color 0.4 ease-in;
+}
+
+.menu-bottom {
+  top: 28px;
+  left: 12px;
+  width: 40px;
+  height: 8px;
+  background: white;
+  transition: background-color 0.4 ease-in;
+}
+
+.container-menu:hover .menu-top,
+.container-menu:hover .menu-bottom {
+  background: #fff9cb;
 }
 
 .btn-menu {
@@ -84,7 +108,7 @@ nav {
 
 .icon {
   color: white;
-  transition: color 0.3s ease-out;
+  transition: color 0.3s ease-in;
   cursor: pointer;
 }
 
@@ -150,7 +174,7 @@ nav {
   border-radius: 100px;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in;
   color: white;
 }
 
@@ -186,6 +210,11 @@ nav {
   font-family: "ArtDeco Condensed";
   color: white;
   width: max-content;
+  transition: color .3s ease-in;
+}
+
+.container-links a:hover {
+  color: #fff9cb;
 }
 
 .menu-footer {
